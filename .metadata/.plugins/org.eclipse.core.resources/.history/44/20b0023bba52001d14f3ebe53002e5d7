@@ -1,0 +1,35 @@
+package dao;
+
+import java.util.ArrayList;
+
+import dto.Product;
+
+public class ProductRepository {
+	
+	private ArrayList<Product> listOfProducts = new ArrayList<Product>();
+	
+	public ProductRepository() {
+		
+		Product figure1 = new Product("무키 베츠","Mookie Betts");
+		figure1.setPcode("A123");
+		figure1.setMan("Apple");
+		figure1.setUnitcoupon(5);
+		figure1.setUnitprice(1000000);
+		
+		Product figure2 = new Product("무키 베츠","Mookie Betts");
+		figure2.setPcode("A123");
+		figure2.setMan("Apple");
+		figure2.setUnitcoupon(5);
+		figure2.setUnitprice(1000000);
+		
+		Product figure3 = new Product("무키 베츠","Mookie Betts");
+		figure3.setPcode("A123");
+		figure3.setMan("Apple");
+		figure3.setUnitcoupon(5);
+		figure3.setUnitprice(1000000);
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package figuredb;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class FigureDAO {
+	
+	Connection con;
+	PreparedStatement pstmt;
+
+}

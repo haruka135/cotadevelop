@@ -1,0 +1,32 @@
+<%@ page import = "java.sql.DriverManager" %>
+<%@ page import = "java.sql.Connection" %>
+<%@ page import = "java.sql.PreparedStatement" %>
+<%@ page import = "model.MemberDAO" %>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<jsp:useBean id="mbean" class="model.MemberBean">
+<jsp:setProperty name="mbean" property="*" />
+</jsp:useBean>
+					
+<!DOCTYPE html>
+<html>
+<body>
+					<%
+					
+					request.setCharacterEncoding("euc-kr");
+					
+					%>
+					
+					<%
+					
+					
+					MemberDAO mdao = new MemberDAO();
+					
+					mdao.insertMember(mbean);
+					
+					%>
+					
+				
+</body>
+</html>

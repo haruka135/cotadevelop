@@ -1,0 +1,7 @@
+package Boardmodel;
+
+public class BoardBean {
+	
+	private int num;
+
+}

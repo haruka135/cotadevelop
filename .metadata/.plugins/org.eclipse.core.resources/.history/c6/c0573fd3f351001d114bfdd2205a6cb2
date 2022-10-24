@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+ <%@ page import = "model.MemberDAO" %>
+ <%@ page import = "model.MemberBean" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+	String id = request.getParameter("id");
+
+	MemberDAO mdao = new MemberDAO();
+
+	MemberBean mbean = mdao.oneSelectMember(id);
+
+%>
+
+ <center>
+ <h2>회원 정보 보기 </h2>
+ </center>
+ 	<table width="400" border="1">
+ 		<tr height="50">
+ 			<td align="center" width="150">아이디</td>
+ 			<td width="250"><%= mbean.getId() %>
+ 		</tr>
+ 		<tr height="50">
+ 			<td align="center" width="150">이메</td>
+ 			<td width="250"><%= mbean.getEmail() %>
+ 		</tr>
+ 	
+ 	</table>
+
+</body>
+</html>

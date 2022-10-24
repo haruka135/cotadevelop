@@ -1,0 +1,13 @@
+package figuredb;
+
+public class FigureBean {
+	
+	private String pname;
+	private String pename;
+	private String pcode;
+	private String man;
+	private Integer unitprice;
+	private Integer unitcoupon;
+	private String img;
+
+}

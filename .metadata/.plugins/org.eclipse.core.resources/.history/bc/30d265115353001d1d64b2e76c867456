@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import = "Boardmodel.BoardDAO" %>
+<!DOCTYPE html>
+<html>
+
+<body>
+				<%
+				
+				String pass =  request.getParameter("password");
+				
+				int num = Integer.parseInt(request.getParameter("num"));
+				
+				BoardDAO bdao = new BoardDAO();
+				
+				String password = bdao.getPass(num);
+				
+				%>
+</body>
+</html>

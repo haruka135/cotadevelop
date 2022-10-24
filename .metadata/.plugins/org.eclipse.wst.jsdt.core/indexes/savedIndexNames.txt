@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/haruka/workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+713368793.index
+3370958221.index
+2305908056.index
+3941331288.index
+1616180620.index
+1242851319.index
+3799154523.index

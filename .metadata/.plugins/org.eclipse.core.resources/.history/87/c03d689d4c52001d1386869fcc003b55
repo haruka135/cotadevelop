@@ -1,0 +1,11 @@
+package figuredb;
+
+public class FigureBean {
+	
+	private String pname;
+	
+	private String pename;
+	
+	
+
+}

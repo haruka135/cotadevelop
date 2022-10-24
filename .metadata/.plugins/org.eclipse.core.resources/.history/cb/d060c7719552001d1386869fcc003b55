@@ -1,0 +1,90 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import = "java.util.ArrayList" %>
+<%@ page import = "figuremodel.Product" %>
+<%@ page import = "figuremodel.ProductRepository" %>
+<jsp:useBean id="productDAO" class="figuremodel.ProductRepository" scope="session" />
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MLB-Statcast Database</title>
+	<link rel="stylesheet" type="text/css" href="xeicon/xeicon.min.css">
+	<link rel="stylesheet" href="css_part/style.css">
+	<link rel="stylesheet" href="css_part/swiper.min.css">
+	<link rel="stylesheet" href="css_part/default.css">
+	<link rel="stylesheet" href="css_part/bootstrap.min.css"
+	<script src="script_part/jquery.js" charset="utf-8"></script>
+	<script src="script_part/swiper.js" charset="utf-8"></script>
+	<script src="script_part/default.js" charset="utf-8"></script>
+</head>
+<body>
+<section>
+		
+			<div class="main_text0">
+				<h1>WELCOME TO BASEBALL</h1>
+				<div class="contents1">메이저리그에 오신 여러분들을 환영합니다.</div>
+				<%
+				
+				ProductRepository dao = ProductRepository.getInstance();
+				
+				ArrayList<Product> listOfProducts = productDAO.getAllProducts();
+				
+				%>
+				
+			<ul class="icons">
+					<li>
+					<%
+					
+						Product figure1 = listOfProducts.get(0);
+					
+					%>
+						<dl>
+							<dt><a href=""><%= figure1.getPename() %></a></dt>
+							<dd><a href=""><img src="img/mlb_figure_01.png" alt=""></a></dd>
+							<dd class="figure"><%= figure1.getPname() %></dd>
+							<dd class="last">
+								<div><a href="./Product.jsp?id=<%= figure1.getPcode() %>">이동하기</a></div>
+								<div><a href="addProduct.jsp">등록하기</a></div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+					<%
+					
+						Product figure2 = listOfProducts.get(0);
+					
+					%>
+						<dl>
+							<dt><a href=""><%= figure2.getPename() %></a></dt>
+							<dd><a href=""><img src="img/mlb_figure_01.png" alt=""></a></dd>
+							<dd class="figure"><%= figure2.getPname() %></dd>
+							<dd class="last">
+								<div><a href="./Product.jsp?id= <%= figure2.getPcode() %>">이동하기</a></div>
+								<div><a href="addProduct.jsp">등록하기</a></div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+					<%
+					
+						Product figure3 = listOfProducts.get(0);
+					
+					%>
+						<dl>
+							<dt><a href=""><%= figure3.getPename() %></a></dt>
+							<dd><a href=""><img src="img/mlb_figure_01.png" alt=""></a></dd>
+							<dd class="figure"><%= figure3.getPname() %></dd>
+							<dd class="last">
+								<div><a href="./Product.jsp?id=<%= figure3.getPcode() %>">이동하기</a></div>
+								<div><a href="addProduct.jsp">등록하기</a></div>
+							</dd>
+						</dl>
+					</li>
+					
+					
+				</ul>
+			</div>
+		</section>
+</body>
+</html>

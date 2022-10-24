@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<body>
+
+	<%
+	
+		String num = request.getParameter("num");
+	
+	%>
+
+
+
+</body>
+</html>

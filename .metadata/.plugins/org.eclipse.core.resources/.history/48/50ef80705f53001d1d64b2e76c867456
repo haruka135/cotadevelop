@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MLB-Statcast Database</title>
+	<link rel="stylesheet" type="text/css" href="xeicon/xeicon.min.css">
+	<link rel="stylesheet" href="css_part/style.css">
+	<link rel="stylesheet" href="css_part/swiper.min.css">
+	<link rel="stylesheet" href="css_part/default.css">
+	<script src="script_part/jquery.js" charset="utf-8"></script>
+	<script src="script_part/swiper.js" charset="utf-8"></script>
+	<script src="script_part/default.js" charset="utf-8"></script>
+</head>
+<body>
+<section>
+			<div id="info">
+				<div>
+				<h2>Sites Info.</h2>
+				<ul class="list clear">
+					<li class="bg1">
+						<h3>사이트 원본 이동</h3>
+						<div>곧 맨 위로 이동 됩니다.</div>
+						<a href="#a">바로가기</a>
+					</li>
+					<li class="bg2">
+						<a href="info.html"></a>
+						<h3>피규어 정보 이동</h3>
+						<div>피규어 목록을 볼 수 있습니다.</div>
+					</li>
+					<li class="bg3">
+						<a href="./addProduct.jsp"></a>
+						<h3>피규어 등록 이동</h3>
+						<div>권한 있는 사람만 이동 가능합니다.</div>
+					</li>
+					<li class="bg4">
+						<a href="BoardList.jsp"></a>
+						<h3>질문 게시판 이동</h3>
+						<div>문의 게시판으로 이동합니다.</div>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</section>
+
+</body>
+</html>

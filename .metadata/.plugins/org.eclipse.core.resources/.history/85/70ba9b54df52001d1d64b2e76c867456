@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MLB-Statcast Database</title>
+	<link rel="stylesheet" type="text/css" href="xeicon/xeicon.min.css">
+	<link rel="stylesheet" href="css_part/board.css">
+	<link rel="stylesheet" href="css_part/swiper.min.css">
+	<link rel="stylesheet" href="css_part/default.css">
+	<script src="script_part/jquery.js" charset="utf-8"></script>
+	<script src="script_part/swiper.js" charset="utf-8"></script>
+	<script src="script_part/default.js" charset="utf-8"></script>
+</head>
+<body>
+		<jsp:include page="Top.jsp" />
+		
+	  <section class="block board_wrap">
+            <div class="joincontents">
+                <h2 class="subject2">게시판</h2>
+            </div>
+
+			<div class="board_title">
+				<strong>공지사항</strong>
+				<p>공지사항을 빠르고 정확하게 안내해 드립니다.</p>
+			</div>
+			
+			<div class="board_write_wrap">
+			
+			
+			
+			</div>
+			
+
+				<div class="bt_wrap">
+					<a href="#" class="on">등록</a>
+					 <a href="#">취소</a> 
+				</div>
+			</div>
+
+
+        </section>
+		
+</body>
+</html>

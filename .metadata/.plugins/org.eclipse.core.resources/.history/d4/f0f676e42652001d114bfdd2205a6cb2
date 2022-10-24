@@ -1,0 +1,40 @@
+package boardmodel;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+
+import javax.sql.DataSource;
+
+public class BoardDAO {
+	
+	Connection con;
+	PreparedStatement pstmt;
+	ResultSet rs;
+	
+	public void getConn() {
+		
+		
+		try {
+			
+			Context initctx = new InitialContext();
+			
+			Context envctx =(Context) initctx.lookup("java:comp/env");
+			DataSource ds = envctx.lookup("jdbc/pool");
+			
+			
+		}catch(Exception e) {
+			
+			
+			
+			
+		}
+		
+		
+	}
+	
+
+}

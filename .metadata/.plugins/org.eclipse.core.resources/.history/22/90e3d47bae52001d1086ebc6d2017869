@@ -1,0 +1,109 @@
+package figuremodel;
+
+import java.util.ArrayList;
+
+public class ProductRepository {
+	
+	private ArrayList<Product> listOfProducts = new ArrayList<Product>();
+	
+	private static ProductRepository instance = new ProductRepository();
+	
+	public static ProductRepository getInstance() {
+		
+		return instance;
+	}
+	
+	public ProductRepository() {
+		
+		Product figure1 = new Product("Mookie Betts","무키 베츠");
+		figure1.setPcode("a123");
+		figure1.setMan("Apple");
+		figure1.setUnitcoupon(5);
+		figure1.setUnitprice(1000000);
+		
+		Product figure2 = new Product("Mookie Betts","무키 베츠");
+		figure2.setPcode("a123");
+		figure2.setMan("Apple");
+		figure2.setUnitcoupon(5);
+		figure2.setUnitprice(1000000);
+		
+		Product figure3 = new Product("Mookie Betts","무키 베츠");
+		figure3.setPcode("a123");
+		figure3.setMan("Apple");
+		figure3.setUnitcoupon(5);
+		figure3.setUnitprice(1000000);
+		
+		Product figure4 = new Product("Mookie Betts","무키 베츠");
+		figure4.setPcode("a123");
+		figure4.setMan("Apple");
+		figure4.setUnitcoupon(5);
+		figure4.setUnitprice(1000000);
+		
+		Product figure5 = new Product("Mookie Betts","무키 베츠");
+		figure5.setPcode("a123");
+		figure5.setMan("Apple");
+		figure5.setUnitcoupon(5);
+		figure5.setUnitprice(1000000);
+		
+		Product figure6 = new Product("Mookie Betts","무키 베츠");
+		figure6.setPcode("a123");
+		figure6.setMan("Apple");
+		figure6.setUnitcoupon(5);
+		figure6.setUnitprice(1000000);
+		
+		Product figure7 = new Product("Mookie Betts","무키 베츠");
+		figure7.setPcode("a123");
+		figure7.setMan("Apple");
+		figure7.setUnitcoupon(5);
+		figure7.setUnitprice(1000000);
+		
+		listOfProducts.add(figure1);
+		listOfProducts.add(figure2);
+		listOfProducts.add(figure3);
+		listOfProducts.add(figure4);
+		listOfProducts.add(figure5);
+		listOfProducts.add(figure6);
+		listOfProducts.add(figure7);
+		
+	}
+
+	public ArrayList<Product> getAllProducts() {
+		
+		return listOfProducts;
+		
+		
+	}
+	
+	public Product getProductById(String pcode) {
+		
+		Product productById = null;
+		
+		for(int i=0;i<listOfProducts.size(); i++) {
+			
+			Product product = listOfProducts.get(i);
+			
+			if(product != null && product.getPcode() != null && product.getPcode().equals(pcode)) {
+				
+				
+				productById = product;
+				
+				break;
+				
+			}
+			
+			
+		}
+		
+		return productById;
+		
+		
+	}
+	
+	public void addProduct(Product product) {
+		
+		listOfProducts.add(product);
+		
+	}
+	
+	
+}

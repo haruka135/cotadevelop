@@ -1,0 +1,74 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Vector;
+
+public class MemberDAO {
+	
+	String id = "system";
+	String pass="oracle";
+	String url = "jdbc:oracle:thin:@localhost:1521:XE";
+	
+	Connection con;
+	PreparedStatement pstmt;
+	ResultSet rs;
+	
+	
+	public void getCon() {
+		
+		try {
+			
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+			con = DriverManager.getConnection(url,id,pass);
+			
+			
+		}catch(Exception e) {
+			
+			
+			
+		}
+		
+		
+	}
+	
+	
+	public void insertMember(MemberBean mbean) {
+		
+		
+		try {
+			
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			Connection con = DriverManager.getConnection(url,id,pass);
+			String sql = "insert into member values(?,?,?)";
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, mbean.getId());
+			pstmt.setString(2, mbean.getPass1());
+			pstmt.setString(3, mbean.getEmail());
+			pstmt.executeUpdate();
+			
+			con.close();
+			
+		}catch(Exception e) {
+			
+			e.printStackTrace();
+			
+			
+		}
+		
+		
+	}
+	
+	public Vector<MemberBean> allSelectMember() {
+		
+		Vector<MemberBean> v = new Vector<>();
+		
+		
+	}
+	
+	return v;
+
+}

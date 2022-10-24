@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ page import = "Boardmodel.BoardDAO" %>
+<%@ page import = "Boardmodel.BoardBean" %>
+<!DOCTYPE html>
+<html>
+<body>
+
+	<%
+	
+		int num = Integer.parseInt(request.getParameter("num").trim());
+	
+		BoardDAO bdao = new BoardDAO();
+		
+		BoardBean bean = bdao.getOneBoard();
+	
+	%>
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<%@ page import = "java.sql.DriverManager" %>
+<%@ page import = "java.sql.Connection" %>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<jsp:useBean id="mbean" class="model.MemberBean">
+<jsp:setProperty name="mbean" property="*" />
+</jsp:useBean>
+					
+<!DOCTYPE html>
+<html>
+<body>
+					<%
+					
+					request.setCharacterEncoding("euc-kr");
+					
+					%>
+					
+					<%
+					
+					String id = "system";
+					String pass="oracle";
+					String url = "jdbc:oracle:thin:@localhost:1521:XE";
+					
+					try {
+						
+						Class.forName("oracle.jdbc.driver.OracleDriver");
+						Connection con = DriverManager.getConnection(url,id,pass);
+						String sql = "insert into member values(?,?,?)"
+						
+						
+					}catch(Exception e) {
+						
+						e.printStackTrace();
+						
+						
+					}
+					
+					
+					%>
+					
+					오라클에 접속 완료
+</body>
+</html>

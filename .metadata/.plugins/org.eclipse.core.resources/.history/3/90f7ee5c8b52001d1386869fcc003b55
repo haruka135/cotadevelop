@@ -1,0 +1,78 @@
+package figuredb;
+
+public class FigureBean {
+	
+	private String pname;
+	
+	private String pename;
+	
+	private String pcode;
+	
+	private String man;
+	
+	private int unitprice;
+	
+	private int unitcoupon;
+	
+	private String img;
+
+	public String getPname() {
+		return pname;
+	}
+
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+
+	public String getPename() {
+		return pename;
+	}
+
+	public void setPename(String pename) {
+		this.pename = pename;
+	}
+
+	public String getPcode() {
+		return pcode;
+	}
+
+	public void setPcode(String pcode) {
+		this.pcode = pcode;
+	}
+
+	public String getMan() {
+		return man;
+	}
+
+	public void setMan(String man) {
+		this.man = man;
+	}
+
+	public int getUnitprice() {
+		return unitprice;
+	}
+
+	public void setUnitprice(int unitprice) {
+		this.unitprice = unitprice;
+	}
+
+	public int getUnitcoupon() {
+		return unitcoupon;
+	}
+
+	public void setUnitcoupon(int unitcoupon) {
+		this.unitcoupon = unitcoupon;
+	}
+
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
+	}
+	
+	
+	
+
+}

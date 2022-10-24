@@ -1,0 +1,16 @@
+package model;
+
+public class MemberDAO {
+	
+	String id = "system";
+	String pass="oracle";
+	String url = "jdbc:oracle:thin:@localhost:1521:XE";
+	
+	public void getCon() {
+		
+		
+		
+		
+	}
+
+}

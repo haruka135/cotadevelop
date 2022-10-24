@@ -1,0 +1,20 @@
+package figuremodel;
+
+import java.util.ArrayList;
+
+public class ProductRepository {
+	
+	private ArrayList<Product> listOfProducts = new ArrayList<Product>();
+	
+	public ProductRepository() {
+		
+		Product figure1 = new Product("Mookie Betts","무키 베츠");
+		figure1.setPcode("a123");
+		figure1.setMan("Apple");
+		figure1.setUnitcoupon(5);
+		figure1.setUnitprice(1000000);
+		
+		
+	}
+
+}

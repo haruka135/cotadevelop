@@ -1,0 +1,23 @@
+package figuredb;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+
+public class FigureDAO {
+	
+	Connection con;
+	PreparedStatement pstmt;
+	ResultSet rs;
+	
+	public void getConnect() {
+		
+		Context initctx = (Context) new InitialContext();
+		
+		
+	}
+
+}

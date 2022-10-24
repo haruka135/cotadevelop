@@ -1,0 +1,10 @@
+package boardmodel;
+
+import java.sql.Connection;
+
+public class BoardDAO {
+	
+	Connection con;
+	
+
+}

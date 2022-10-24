@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+ <%@ page import = "model.MemberDAO" %>
+ <%@ page import = "model.MemberBean" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+	String id = request.getParameter("id");
+
+	MemberDAO mdao = new MemberDAO();
+
+	MemberBean mbean = mdao.oneSelectMember(id);
+
+%>
+
+</body>∂
+</html>

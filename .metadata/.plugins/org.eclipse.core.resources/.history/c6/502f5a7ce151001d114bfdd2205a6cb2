@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<jsp:useBean id="mbean" class="model.MemberBean">
+<jsp:setProperty name="mbean" property="*" />
+</jsp:useBean>
+					
+<!DOCTYPE html>
+<html>
+<body>
+					<%
+					
+					request.setCharacterEncoding("euc-kr");
+					
+					%>
+					
+
+</body>
+</html>

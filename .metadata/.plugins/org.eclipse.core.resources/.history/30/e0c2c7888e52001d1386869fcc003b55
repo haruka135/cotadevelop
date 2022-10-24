@@ -1,0 +1,57 @@
+package figuremodel;
+
+import java.util.ArrayList;
+
+public class ProductRepository {
+	
+	private ArrayList<Product> listOfProducts = new ArrayList<Product>();
+	
+	public ProductRepository() {
+		
+		Product figure1 = new Product("Mookie Betts","무키 베츠");
+		figure1.setPcode("a123");
+		figure1.setMan("Apple");
+		figure1.setUnitcoupon(5);
+		figure1.setUnitprice(1000000);
+		
+		Product figure2 = new Product("Mookie Betts","무키 베츠");
+		figure2.setPcode("a123");
+		figure2.setMan("Apple");
+		figure2.setUnitcoupon(5);
+		figure2.setUnitprice(1000000);
+		
+		Product figure3 = new Product("Mookie Betts","무키 베츠");
+		figure3.setPcode("a123");
+		figure3.setMan("Apple");
+		figure3.setUnitcoupon(5);
+		figure3.setUnitprice(1000000);
+		
+		listOfProducts.add(figure1);
+		listOfProducts.add(figure2);
+		listOfProducts.add(figure3);
+		
+	}
+
+	public ArrayList<Product> getAllProducts() {
+		
+		return listOfProducts;
+		
+		
+	}
+	
+	public Product getProductById(String pcode) {
+		
+		Product productById = null;
+		
+		for(int i=0;i<listOfProducts.size(); i++) {
+			
+			Product product = listOfProducts.get(i);
+			
+			
+		}
+		
+		
+	}
+	
+	
+}

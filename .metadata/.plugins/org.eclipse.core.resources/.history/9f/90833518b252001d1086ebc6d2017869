@@ -1,0 +1,57 @@
+package figuredb;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Vector;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+public class FigureDAO {
+	
+	Connection con;
+	PreparedStatement pstmt;
+	ResultSet rs;
+	
+	public void getConnect() {
+		
+		try {
+			Context initctx = (Context) new InitialContext();
+			Context envctx = (Context) initctx.lookup("java:comp/env");
+			DataSource ds = (DataSource) envctx.lookup("jdbc:pool");
+			con = ds.getConnection();
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	public Vector<FigureBean> getSelectFigure() {
+		
+		
+		Vector<FigureBean> v = new Vector<>();
+		
+		getConnect();
+		
+		try {
+			
+			String sql = "select * from figure";
+			
+			pstmt=con.prepareStatement(sql);
+			
+		}catch(Exception e) {
+			
+			
+			
+		}
+		
+		
+	}
+
+}
